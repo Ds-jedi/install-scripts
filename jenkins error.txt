@@ -1,0 +1,6 @@
+In case error
+
+sudo usermod -a -G root jenkins
+sudo vim /etc/sysconfig/jenkins ( add JENKINS_LISTEN_ADDRESS="0.0.0.0" )
+netstat -ntlp
+netstat -ntlp | grep 8080
